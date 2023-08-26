@@ -1,0 +1,155 @@
+*{
+    font-family: "Bricolage_Grotesque variant0";
+    font-weight: 200;
+}
+ 
+body{
+    background-image: url('/src/components/Images/rest2.jpg');
+}
+
+h1{
+    margin:50px;
+    padding:40px;
+    color:rgb(183, 149, 46);
+    justify-content: left;
+}
+
+h1{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s; 
+    animation-fill-mode: forwards;
+    font-size: 50px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h2{
+    color:rgb(196, 182, 137);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s; 
+    animation-fill-mode: forwards; 
+}
+
+h5{
+    font-size: 40px;
+    color:rgb(183, 149, 46);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s; 
+    animation-fill-mode: forwards; 
+}
+/*Logo */
+.logo-image {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Add margin to separate the image from the text */
+}
+
+.logo-image img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+/* image */
+img{
+  float:right;
+  border-radius: 25px;
+  width: 30%;
+  animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s; 
+    animation-fill-mode: forwards;
+    margin-left: 10px;
+
+}
+  /* Navbar */
+  
+  ul {
+    list-style: none;
+    display:flex;
+    padding: 15px;
+    margin: 0;
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    height:70px;
+    transition-property: opacity, transform;
+    font-family: "Bricolage_Grotesque variant0", Tofu;
+    font-weight: 200;
+    font-size: 22px;
+
+  }
+  nav {
+    background-color: rgba(42, 19, 19, 0.5); 
+    
+  }
+  
+  li {
+    margin: 0 15px;
+  }
+
+  a:hover {
+    color: rgb(134, 128, 35);
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(183, 149, 46);
+    font-weight: bold;
+  }
+  .flip-btm {
+    display: inline-block;
+    width: 20%;
+    height: 210px;
+    position: relative;
+    margin:20px;
+  }
+  
+  .flip-btm img {
+    display: block;
+    width: 100%;
+    height: auto;
+    display:flex;
+    margin-top: 0px;
+  }
+  
+  .flip-btm .flipBtmDiv {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(196, 182, 137);
+    padding: 15px;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg);
+    transform-origin: 0 0 0;
+    transition: 0.5s;
+    width: 91%;
+    height: 130px;
+    border-radius: 46px;
+  }
+  
+  .flip-btm:hover .flipBtmDiv {
+    transform: rotateX(0deg);
+  } 
+  
+  .col-sm-4 .flip-btm {
+    display: flex;
+    justify-content:space-evenly; 
+  
+  }
+  
+  .flipBtmDiv {
+    flex: 0 0 calc(33.33% - 20px); 
+    position: relative;
+  }
+ 
